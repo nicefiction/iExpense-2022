@@ -12,6 +12,7 @@
 		C504A3CE2805F8C400A338F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C504A3CD2805F8C400A338F5 /* Assets.xcassets */; };
 		C504A3D12805F8C400A338F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C504A3D02805F8C400A338F5 /* Preview Assets.xcassets */; };
 		C504A3D92805FB8200A338F5 /* WhyStateOnlyWorksWithStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C504A3D82805FB8200A338F5 /* WhyStateOnlyWorksWithStructs.swift */; };
+		C504A3DB2806007500A338F5 /* SharingStateWithStateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C504A3DA2806007500A338F5 /* SharingStateWithStateObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		C504A3CD2805F8C400A338F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C504A3D02805F8C400A338F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C504A3D82805FB8200A338F5 /* WhyStateOnlyWorksWithStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyStateOnlyWorksWithStructs.swift; sourceTree = "<group>"; };
+		C504A3DA2806007500A338F5 /* SharingStateWithStateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingStateWithStateObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				C504A3D82805FB8200A338F5 /* WhyStateOnlyWorksWithStructs.swift */,
+				C504A3DA2806007500A338F5 /* SharingStateWithStateObject.swift */,
 			);
 			path = "Day 36";
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				C504A3CC2805F8C400A338F5 /* ContentView.swift in Sources */,
 				C504A3CA2805F8C400A338F5 /* iExpenseApp.swift in Sources */,
 				C504A3D92805FB8200A338F5 /* WhyStateOnlyWorksWithStructs.swift in Sources */,
+				C504A3DB2806007500A338F5 /* SharingStateWithStateObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
