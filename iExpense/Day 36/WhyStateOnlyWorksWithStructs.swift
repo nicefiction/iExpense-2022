@@ -10,7 +10,7 @@
 /// every time we modified a property of that struct
 /// Swift was actually creating a new instance of the struct.
 ///`@State` was able to spot that change, and automatically reloaded our view.
-/// Now that we have a class,
+///     Now that we have a class,
 /// that behavior no longer happens:
 /// Swift can just modify the value directly.
 /// When `User` is a class
