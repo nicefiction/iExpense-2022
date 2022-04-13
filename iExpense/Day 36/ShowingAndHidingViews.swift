@@ -28,7 +28,7 @@ struct SecondView: View {
 struct ShowingAndHidingViews: View {
     
     // MARK: - PROPERTY WRAPPERS
-    @State private var isShowigSheet: Bool = false
+    @State private var isShowingSheet: Bool = false
     
     
     
@@ -38,9 +38,9 @@ struct ShowingAndHidingViews: View {
     var body: some View {
         
         Button("Show Sheet") {
-            isShowigSheet.toggle()
+            isShowingSheet.toggle()
         }
-        .sheet(isPresented: $isShowigSheet) {
+        .sheet(isPresented: $isShowingSheet) {
             SecondView(name: "Dorothy Gale")
         }
     }
