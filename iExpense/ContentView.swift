@@ -27,8 +27,7 @@ struct ContentView: View {
         
         NavigationView {
             List {
-                ForEach(expenses.items,
-                        id: \.name) { (item: ExpenseItem) in
+                ForEach(expenses.items) { (item: ExpenseItem) in
                     Text("\(item.name)")
                 }
                         .onDelete(perform: removeItems)
