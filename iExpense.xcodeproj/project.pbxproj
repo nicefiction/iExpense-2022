@@ -15,6 +15,7 @@
 		C504A3DB2806007500A338F5 /* SharingStateWithStateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C504A3DA2806007500A338F5 /* SharingStateWithStateObject.swift */; };
 		C504A3DD2806061B00A338F5 /* ShowingAndHidingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C504A3DC2806061B00A338F5 /* ShowingAndHidingViews.swift */; };
 		C56E7D6A2806BE9B004D81F7 /* DeletingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E7D692806BE9B004D81F7 /* DeletingItems.swift */; };
+		C56E7D6C2806CB74004D81F7 /* StoringUserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E7D6B2806CB74004D81F7 /* StoringUserSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C504A3DA2806007500A338F5 /* SharingStateWithStateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingStateWithStateObject.swift; sourceTree = "<group>"; };
 		C504A3DC2806061B00A338F5 /* ShowingAndHidingViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingAndHidingViews.swift; sourceTree = "<group>"; };
 		C56E7D692806BE9B004D81F7 /* DeletingItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletingItems.swift; sourceTree = "<group>"; };
+		C56E7D6B2806CB74004D81F7 /* StoringUserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoringUserSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				C504A3DA2806007500A338F5 /* SharingStateWithStateObject.swift */,
 				C504A3DC2806061B00A338F5 /* ShowingAndHidingViews.swift */,
 				C56E7D692806BE9B004D81F7 /* DeletingItems.swift */,
+				C56E7D6B2806CB74004D81F7 /* StoringUserSettings.swift */,
 			);
 			path = "Day 36";
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C56E7D6A2806BE9B004D81F7 /* DeletingItems.swift in Sources */,
+				C56E7D6C2806CB74004D81F7 /* StoringUserSettings.swift in Sources */,
 				C504A3CC2805F8C400A338F5 /* ContentView.swift in Sources */,
 				C504A3CA2805F8C400A338F5 /* iExpenseApp.swift in Sources */,
 				C504A3D92805FB8200A338F5 /* WhyStateOnlyWorksWithStructs.swift in Sources */,
