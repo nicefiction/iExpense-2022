@@ -11,8 +11,7 @@ import SwiftUI
 struct iExpenseApp: App {
     var body: some Scene {
         WindowGroup {
-            // ContentView()
-            StoringUserSettings.init()
+            ContentView()
         }
     }
 }

@@ -18,6 +18,8 @@ struct ContentView: View {
     // MARK: - PROPERTY WRAPPERS
     @StateObject var expenses = Expenses.init()
     
+    @State private var isShowingAddView: Bool = false
+    
     
     
     // MARK: - PROPERTIES
@@ -35,14 +37,14 @@ struct ContentView: View {
             .navigationTitle("iExpense")
             .toolbar {
                 Button(action: {
-                    let expenseItem = ExpenseItem.init(name: "Test",
-                                                       type: "Personal",
-                                                       amount: 1.00)
-                    expenses.items.append(expenseItem)
+                    isShowingAddView.toggle()
                 }, label: {
                     Image(systemName: "plus.circle")
                         .font(.title)
                 })
+            }
+            .sheet(isPresented: $isShowingAddView) {
+                AddView(expenses: expenses)
             }
         }
     }
