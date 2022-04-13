@@ -26,13 +26,20 @@ struct ContentView: View {
     // MARK: - INITIALIZERS
     // MARK: - COMPUTED PROPERTIES
     var body: some View {
-        
         NavigationView {
             List {
                 ForEach(expenses.items) { (item: ExpenseItem) in
-                    Text("\(item.name)")
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("\(item.name)")
+                                .font(.subheadline)
+                            Text("\(item.type)")
+                        }
+                        Spacer()
+                        Text("\(item.amount, format: .currency(code: "EUR"))")
+                    }
                 }
-                        .onDelete(perform: removeItems)
+                .onDelete(perform: removeItems)
             }
             .navigationTitle("iExpense")
             .toolbar {
