@@ -12,7 +12,7 @@ struct AddView: View {
     
     @State private var name: String = ""
     @State private var selectedType: String = "Personal"
-    @State private var quantity: Double = 0.00
+    @State private var amount: Double = 0.00
     
     
     
@@ -39,11 +39,20 @@ struct AddView: View {
                 }
                        .pickerStyle(.segmented)
                 TextField("Quantity...",
-                          value: $quantity,
+                          value: $amount,
                           format: .currency(code: Locale.current.currencyCode ?? "EUR"))
                 .keyboardType(.decimalPad)
             }
             .navigationTitle(Text("Add a new expense"))
+            .toolbar(content: {
+                Button("Save Item",
+                       action: {
+                    let expenseItem = ExpenseItem.init(name: name,
+                                                       type: selectedType,
+                                                       amount: amount)
+                    expenses.items.append(expenseItem)
+                })
+            })
         }
     }
     

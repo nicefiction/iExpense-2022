@@ -5,9 +5,10 @@
 import Foundation
 
 
-struct ExpenseItem: Identifiable {
+struct ExpenseItem: Identifiable,
+                    Codable {
     
-    let id = UUID.init()
+    var id = UUID.init()
     let name: String
     let type: String
     let amount: Double
